@@ -1,41 +1,48 @@
-var createError = require('http-errors');
+var compression = require('compression');
+var cors = require('cors');
 var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var bodyParser = require('body-parser');
+var mongoose = require("mongoose");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const port = process.env.PORT || 4000;
+const db = require('./config/constants').mongoURI;
 
-var app = express();
+// Express app configuration
+//creating instance of express app
+const app = express(); 
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// using compression module and cors module
+app.use(compression());
+app.use(cors());
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// Database configuration
+//setting mongoose promise to global promise
+mongoose.Promise = global.Promise;
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//connecting to the database
+mongoose
+	.connect(db, { 
+		useNewUrlParser: true, 
+		useFindAndModify: false, 
+		useUnifiedTopology: true })
+	.then(() => console.log("connected to the database"))
+	.catch((err) => console.log(err))
+	
+// Server configuration	
+// serving static files
+app.use('/static', express.static('public'))
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// initiating body parser for POST requests
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+// Router configuration
+// importing the router
+var router = require('./Routes/index');
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+// initiating router
+app.use('/api', router)
 
-module.exports = app;
+//Listening to request	
+app.listen(port, () => {
+	console.log('This express app is listening to port number' + port)})
