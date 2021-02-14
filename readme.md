@@ -35,7 +35,7 @@ Word search is an online vocabulary journal which allows you to:
 <ul>
     <li>Save a word in the database</li>
     <li>View all the words in the database</li>
-<ul>
+</ul>
 
 ---
 
