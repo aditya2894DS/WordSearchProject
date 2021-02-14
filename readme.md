@@ -19,7 +19,7 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
- An understanding of vocabulary terms is critical for
+An understanding of vocabulary terms is critical for
 understanding the overall concepts of texts, communicating ideas and avoiding
 misunderstandings. Specifically teaching vocabulary helps to deepen the meaning of texts.
 
@@ -31,6 +31,11 @@ important aspects. Based on the previous studies, it has been
 frequently suggested that vocabulary journals are recommended as effective tools for
 students to use to take charge of, organize and manage their vocabulary learning
 
+Word search is an online vocabulary journal which allows you to:
+<ul>
+    <li>Save a word in the database</li>
+    <li>View all the words in the database</li>
+<ul>
 
 
 #### Technologies
