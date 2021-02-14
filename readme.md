@@ -1,7 +1,5 @@
 # Word Search 
 
-<!-- ![Project Image](project-image-url) -->
-
 ---
 
 ### Table of Contents
@@ -10,9 +8,7 @@ You're sections headers will be used to reference location of destination.
 - [Description](#description)
 - [Technologies](#technologies)
 - [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
+- [Screenshots](#screenshots)
 
 ---
 
@@ -66,16 +62,9 @@ If you wish download the source code of the app using git clone then you can fol
 5. After installation get out of <code>wordsearch-frontend</code> and type <code>npm run dev</code>.
 
 
-#### Screenshots
+## Screenshots
 ![Screenshot (930)](https://user-images.githubusercontent.com/77119834/107882347-bd3c4100-6f0e-11eb-8053-ff7f8b474404.png)
 ![Screenshot (931)](https://user-images.githubusercontent.com/77119834/107882351-c0373180-6f0e-11eb-8c40-facff783b4bd.png)
 ![Screenshot (932)](https://user-images.githubusercontent.com/77119834/107882356-c1685e80-6f0e-11eb-8fa5-ce9e3b84c753.png)
 ![Screenshot (933)](https://user-images.githubusercontent.com/77119834/107882358-c200f500-6f0e-11eb-8041-2bffa5fddccd.png)
 
----
-## Author Info
-
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
-[Back To The Top](#read-me-template)
