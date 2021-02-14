@@ -39,10 +39,16 @@ Word search is an online vocabulary journal which allows you to:
 
 ---
 
-#### Technologies
+## Technologies
 
-- Technology 1
-- Technology 2
+For the backend I have used -
+ 1. ExpressJS 
+ 2. MongooseJS
+ 3. MongoDB as the database
+
+For the frontend I have used -
+ 1. ReactJS
+ 2. Bootstrap package for React for styling
 
 [Back To The Top](#read-me-template)
 
