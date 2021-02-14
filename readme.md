@@ -1,7 +1,6 @@
 # Word Search 
 
 ### Table of Contents
-You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [Technologies](#technologies)
