@@ -6,7 +6,7 @@ import WordPreview from "../Components/newWordPreview";
 
 import * as wordActions from '../../redux_components/actions/wordActions/wordActionCreator';
 
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 
 class EnterNewWord extends Component{
 	constructor(){
@@ -88,35 +88,36 @@ class EnterNewWord extends Component{
 			<React.Fragment>
 					<h2 className='section-heading'>Enter word in the database</h2>
 					<hr />
-					<div className='form-article-container flex-row'>
-						<NewWordFormComponent
-							changeNewWord={this.handleNewWordChange} 
-							showValue_Word={newWord}
-							changeOriginLang={this.handleOriginLangChange} 
-							showValue_OriginLang={originLang} 
-							changeRootWord={this.handleRootWordChange} 
-							showValue_RootWord={rootWord}
-							changeCategory={this.handleCategoryChange} 
-							showValue_PartOfSpeech={partOfSpeech}
-							changeSubCategory={this.handleSubCategoryChange}
-							showValue_SubCategory={subCategory} 
-							changeConnotation={this.handleConnotationChange} 
-							showValue_Connotation={wordConnotation}
-							changeDefinition={this.handleDefinitionChange}
-							showValue_Definition={definition} />
-						<WordPreview 
-							newWord={newWord} 
-							originLang={originLang} 
-							rootWord={rootWord} 
-							partOfSpeech={partOfSpeech} 
-							subCategory={subCategory} 
-							wordConnotation={wordConnotation} 
-							definition={definition} /></div>	
-					<div className='savedword_btn-holder flex-row hasborder'>
-							<p className='message-container'>{this.props.addwordState.err}</p>
-							<p className='savedsuccess-msg'>{this.props.addwordState.savedStatus}</p>
-							<Button className='saveword-btn site-btn' onClick={() => this.props.saveWord(wordDetail)}>Save</Button>					
-							</div></React.Fragment>)}}
+					<div className='site-article-container'>
+						<div className='form-article-container flex-row'>
+							<NewWordFormComponent
+								changeNewWord={this.handleNewWordChange} 
+								showValue_Word={newWord}
+								changeOriginLang={this.handleOriginLangChange} 
+								showValue_OriginLang={originLang} 
+								changeRootWord={this.handleRootWordChange} 
+								showValue_RootWord={rootWord}
+								changeCategory={this.handleCategoryChange} 
+								showValue_PartOfSpeech={partOfSpeech}
+								changeSubCategory={this.handleSubCategoryChange}
+								showValue_SubCategory={subCategory} 
+								changeConnotation={this.handleConnotationChange} 
+								showValue_Connotation={wordConnotation}
+								changeDefinition={this.handleDefinitionChange}
+								showValue_Definition={definition} />
+							<WordPreview 
+								newWord={newWord} 
+								originLang={originLang} 
+								rootWord={rootWord} 
+								partOfSpeech={partOfSpeech} 
+								subCategory={subCategory} 
+								wordConnotation={wordConnotation} 
+								definition={definition} /></div>	
+							<div className='savedword_btn-holder flex-row'>
+								<p className='message-container'>{this.props.addwordState.err}</p>
+								<p className='savedsuccess-msg'>{this.props.addwordState.savedStatus}</p>
+								<Button className='saveword-btn site-btn' onClick={() => this.props.saveWord(wordDetail)}>Save</Button>					
+								</div></div></React.Fragment>)}}
 
 const mapStateToProps = (state) => {
 	return { addwordState: state.addwordState }}
