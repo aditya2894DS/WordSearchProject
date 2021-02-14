@@ -112,7 +112,7 @@ class EnterNewWord extends Component{
 							subCategory={subCategory} 
 							wordConnotation={wordConnotation} 
 							definition={definition} /></div>	
-					<div className='savedword_btn-holder flex-row'>
+					<div className='savedword_btn-holder flex-row hasborder'>
 							<p className='message-container'>{this.props.addwordState.err}</p>
 							<p className='savedsuccess-msg'>{this.props.addwordState.savedStatus}</p>
 							<Button className='saveword-btn site-btn' onClick={() => this.props.saveWord(wordDetail)}>Save</Button>					
