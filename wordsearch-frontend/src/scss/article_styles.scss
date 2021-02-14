@@ -1,0 +1,340 @@
+@import './base_styles.scss';
+
+
+.message-container {
+    color: red;
+}
+
+//new style landing page
+.infotext-container {
+    font-size: 1.1em;
+
+    .infotext-txt2 {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+}
+
+.landingpage__bottom-section {
+    .signupform-heading {
+        color: $site_darkbrown;
+    }
+
+    hr {
+        border: 1px solid $site_darkbrown;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .signup-holder {
+        align-items: center;
+
+        .loading-display {
+            margin-left: auto;
+
+            .signup-submit-btn {
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+
+//newstyle
+.memberdashboardpage__bottom-section {
+    background-color: $site-lavender;
+    padding: 1em 0;
+    height: 100%;
+
+    .section-heading {
+        color: $site_darkbrown;
+    }
+
+    hr {
+        margin-top: 0;
+        border: 1px solid $site_darkbrown;
+    }
+
+    .viewword_gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+        .viewword_griditem {
+            padding-right: 0.5em;
+
+            .viewword_grid-header {
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+                    margin-bottom: 0;
+                    color: $site_darkbrown;
+                }
+
+                p {
+                    color: $site_darkbrown;
+                    font-size: 1.3em;
+                    align-self: flex-end;
+                    margin-bottom: 0;
+                }
+            }
+
+            hr {
+                margin: 0;
+            }
+
+            ul {
+                background-color: #ccc;
+                padding-inline-start: 1.5em;
+                margin: 0;
+                // padding-left: 0.2em;
+
+            }
+        }
+    }
+
+}
+
+//end
+
+//new word form newstyle
+.form-article-container {
+    height: 100%;
+
+    .new-word-form {
+        padding: 0 auto;
+        justify-content: space-between;
+        display: inline-block;
+        flex: 1.5 1 0;
+
+        p,
+        span {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: $site_darkbrown;
+        }
+
+        .etymology-column,
+        .word-column,
+        .grammar-column {
+            margin-right: 1em;
+            flex: 1 1 0;
+        }
+
+        .form-top-section {
+            justify-content: space-between;
+        }
+
+        .form-bottom-section {
+            p {
+                margin: 0;
+            }
+
+            .meaning-textarea {
+                width: 100%;
+                height: 10em;
+            }
+        }
+    }
+
+    .word-preview-section {
+        margin-left: 1em;
+        width: 100%;
+        flex: 1 1 0;
+        color: $site_darkbrown;
+
+        .word-partofspeech {
+            width: 100%;
+            margin-bottom: -0.5em;
+            border-bottom: 1px solid $site_darkbrown;
+            align-items: flex-end;
+
+            h2 {
+                margin: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .connotation-txt {
+                margin-left: auto;
+            }
+
+            .noun-type-txt {
+
+                &:before {
+                    content: "(";
+                }
+
+                &:after {
+                    content: ")";
+                }
+            }
+        }
+
+        .etymology-section {
+            p {
+                margin: 0;
+            }
+
+            .originlanguage-txt,
+            .rootword-txt {
+                font-weight: 500;
+            }
+
+            .originlanguage-txt {
+                margin-top: 1em;
+            }
+        }
+
+        .meaning-section {
+            .meaning-heading-txt {
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+
+            .meaning-desc-txt {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.savedword_btn-holder {
+    align-items: center;
+    width: 59.5%;
+    justify-content: flex-end;
+
+    .savedsuccess-msg {
+        color: green;
+        font-weight: 500;
+    }
+
+    .saveword-btn {
+        margin-left: 0.5em;
+    }
+}
+
+.no_word-content {
+    color: $site_darkbrown;
+
+    .no_word_heading {
+        font-size: 2em;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    hr {
+        margin-top: 0;
+    }
+
+    .noword-msg-container {
+        justify-content: center;
+        text-align: center;
+
+        .noword-msg {
+            margin: auto auto;
+        }
+    }
+
+}
+
+//view word in detail styles
+.viewwordbyletter__top-section {
+    padding-top: 1em;
+    background-color: $site-lavender;
+
+    .section-heading {
+        color: $site_darkbrown;
+        margin-bottom: 0;
+    }
+
+    hr {
+        margin-top: 0;
+        border: 1px solid $site_darkbrown;
+    }
+}
+
+.viewwordbyletter__bottom-section {
+    background-color: $site-lavender;
+    height: 100%;
+
+    .viewwordindetail-section-container {
+        width: 100%;
+        height: 100%;
+
+        hr {
+            width: 100%;
+            margin: 0;
+            margin-top: 0.5em;
+            border: 1px solid $site_darkbrown
+        }
+
+        .wordlist-section {
+            width: 28%;
+
+            hr {
+                margin-top: 0;
+            }
+
+            .wordlist-header {
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+                    margin: 0;
+                    color: $site_darkbrown;
+                }
+
+                p {
+                    margin-bottom: 0.1em;
+                    font-size: 2em;
+                    align-self: flex-end;
+                }
+            }
+
+            .wordlist-container {
+                height: 25em;
+
+                ul {
+                    background-color: white;
+                    padding-inline-start: 1.5em;
+                    margin: 0;
+                    height: 100%;
+
+                    li {
+                        padding: 0.2em 0;
+                        cursor: pointer !important;
+
+                        &:hover {
+                            background-color: #3279db;
+                            color: white
+                        }
+                    }
+                }
+            }
+        }
+
+        .word-preview-section {
+            .word-partofspeech {
+                align-items: flex-end;
+
+                .word-preview-txt {
+                    margin: 0;
+                    font-size: 2em;
+                    margin: 0 !important;
+                    font-weight: 500;
+                }
+
+                .noun-type-txt,
+                .connotation-txt,
+                .meaning-heading-txt {
+                    // font-weight: bold;
+                    margin-bottom: 0.4em;
+                }
+            }
+        }
+
+
+    }
+}

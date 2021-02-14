@@ -1,0 +1,86 @@
+@import './base_styles.scss';
+
+// new style
+.landingpage-header, .member-header{
+    background-color: $site_darkbrown;
+    padding-top: 0.5em;
+    .signin-holder{
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5em;
+        .loading-display{
+            margin-left: auto;
+            .signin-submit-btn{
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+//end
+
+// new style
+.landingpage__bottom-section{
+    padding: 1em 0;
+    height: 100%;
+    background-color: $site_lavender;
+    .infotext-container{
+        hr{
+            margin-top: 0;
+            border: 1px solid $site_darkbrown;
+            width: 100%;
+        }
+    }
+}
+//end
+
+//newstyle
+.userprofile-console {
+    padding: 0.3em 0 0.3em 0;
+    align-items: flex-end;
+    .userprofile-console__profilename-console{
+        .profilename-console__profilename{
+            color: $site_lavender;
+        }
+    }
+
+    .signin-holder {
+        justify-content: space-between;
+        padding: 0.3em 0;
+        margin: 0 !important;
+        height: 3em;
+        align-items: center;
+        .loader-container{
+            margin-left: 0.5em;
+        }
+        .message-container{
+            align-self: center;
+            margin-bottom: 0;
+        }
+        .signin-btn {
+            margin-left: 0.5em;
+            height: 2em;
+        }
+    }
+}
+
+// newstyle
+.member-header__tab-container {
+    margin-top: auto;
+    justify-content: center;
+    .member-tabcontainer__enterwordtab, .member-tabcontainer__viewdatabasetab{
+        background-color: #aaa;
+        padding: 0.2em 1.5em;
+        clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 95% 0%);   
+        cursor: pointer;     
+        font-weight: 500;
+        width: 14em;
+        text-align: center;
+    }
+    .active{
+        padding: 0.2em 0.2em;
+        font-size: 1.1em;
+        background-color: $site-lavender;
+        border-bottom: 0;
+    }
+}
+// end

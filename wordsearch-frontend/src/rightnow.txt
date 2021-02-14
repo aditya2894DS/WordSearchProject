@@ -1,0 +1,1 @@
+create helper function to run through the savedBy array and return result based on whether the current user is among the savedby users
