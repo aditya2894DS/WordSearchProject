@@ -58,8 +58,9 @@ For the frontend I have used -
 If you wish see the source code of the app then you can follow the steps given below:
 
 #### Installation
+1. Copy the git url of the app to your clip board
 1. Open command prompt and create an empty directory using <code>mkdir</code>.
-2. Get inside di
+2. Enter the directory and type <code>git clone \<git url\></code>
 
 
 #### API Reference
