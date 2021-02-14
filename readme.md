@@ -55,21 +55,22 @@ For the frontend I have used -
 
 ## How To Use
 
-If you wish see the source code of the app then you can follow the steps given below:
+You can download teh source code of the app you can either dowload the zip file or use git clone.
 
+If you wish download the source code of the app using git clone then you can follow the steps given below:
 #### Installation
-1. Copy the git url of the app to your clip board
-1. Open command prompt and create an empty directory using <code>mkdir</code>.
-2. Enter the directory and type <code>git clone \<git url\></code>
+1. Copy the git url of the app to your clip board.
+2. Open command prompt and type <code>git clone \<git url\></code>.
+3. After the cloning is done, enter the directory and type <code>npm install</code>.
+4. After the installation is complete, enter inside <code>wordsearch-frontend</code> and again type <code>npm install</code>.
+5. After installation get out of <code>wordsearch-frontend</code> and type <code>npm run dev</code>.
 
 
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#read-me-template)
-
+#### Screenshots
+![Screenshot (930)](https://user-images.githubusercontent.com/77119834/107882347-bd3c4100-6f0e-11eb-8053-ff7f8b474404.png)
+![Screenshot (931)](https://user-images.githubusercontent.com/77119834/107882351-c0373180-6f0e-11eb-8c40-facff783b4bd.png)
+![Screenshot (932)](https://user-images.githubusercontent.com/77119834/107882356-c1685e80-6f0e-11eb-8fa5-ce9e3b84c753.png)
+![Screenshot (933)](https://user-images.githubusercontent.com/77119834/107882358-c200f500-6f0e-11eb-8041-2bffa5fddccd.png)
 
 ---
 ## Author Info
