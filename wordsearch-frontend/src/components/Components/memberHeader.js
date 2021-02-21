@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { frontendURL } from '../../config/constants';
 
 import UserProfileComponent from './userProfileComponent'
+import wsLogo from '../../media/logo.png';
 
 import '../../scss/base_styles.scss';
 import '../../scss/header_styles.scss';
@@ -49,7 +50,11 @@ class MemberHeader extends Component{
  		return(
 			<React.Fragment> 
 				<Row className='member-header'>
-					<Col xs={3}><h2 className='site-name'>Word search</h2></Col>
+					<Col xs={3}>
+						<div className='site-logo_holder'>
+							<img src={wsLogo} alt='logo' />
+						</div>
+					</Col>
 					<Col xs={6} className='member-header__tab-container flex-row'>
 						<div className={`member-tabcontainer__viewdatabasetab ${!toggleColour ? "" : "active"}`} onClick={this.triggerViewDatabase}>View your database</div>
 						<div className={`member-tabcontainer__enterwordtab ${toggleColour ? "" : "active"}`} onClick={this.triggerEnterNewWord}>Add word to database</div>
