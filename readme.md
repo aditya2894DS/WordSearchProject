@@ -60,8 +60,8 @@ If you wish download the source code of the app using git clone then you can fol
 
 
 ## Screenshots
-![Screenshot (930)](https://user-images.githubusercontent.com/77119834/107882347-bd3c4100-6f0e-11eb-8053-ff7f8b474404.png)
-![Screenshot (931)](https://user-images.githubusercontent.com/77119834/107882351-c0373180-6f0e-11eb-8c40-facff783b4bd.png)
-![Screenshot (932)](https://user-images.githubusercontent.com/77119834/107882356-c1685e80-6f0e-11eb-8fa5-ce9e3b84c753.png)
-![Screenshot (933)](https://user-images.githubusercontent.com/77119834/107882358-c200f500-6f0e-11eb-8041-2bffa5fddccd.png)
+![Screenshot (940)](https://user-images.githubusercontent.com/77119834/108622751-d722da00-7460-11eb-93e9-f4f69ef8d076.png)
+![Screenshot (941)](https://user-images.githubusercontent.com/77119834/108622756-dc802480-7460-11eb-8593-ed50884de206.png)
+![Screenshot (944)](https://user-images.githubusercontent.com/77119834/108622757-ddb15180-7460-11eb-9ab5-c0b03814710c.png)
+![Screenshot (945)](https://user-images.githubusercontent.com/77119834/108622758-de49e800-7460-11eb-9288-a5c06e92433b.png)
 
