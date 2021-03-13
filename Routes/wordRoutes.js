@@ -14,7 +14,8 @@ router.post('/new', authenticateUser, function (req, res, next) {
 		connotation,
 		root,
 		languageOfOrigin,
-		definition
+		definition,
+		example
 	} = req.body;
 
 	Words.findOne({
@@ -49,6 +50,7 @@ router.post('/new', authenticateUser, function (req, res, next) {
 			newWord.root = root;
 			newWord.languageOfOrigin = languageOfOrigin;
 			newWord.definition = definition;
+			newWord.example.push(example);
 			newWord.savedBy.push(currentUser)
 			newWord.save((err, result) => {
 				if (err) {

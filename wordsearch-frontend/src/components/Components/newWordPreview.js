@@ -15,6 +15,9 @@ class WordPreview extends Component{
 						<p className='rootword-txt'>Root word:{this.props.rootWord}</p></div>
 					<div className='meaning-section'>
 						<p className='meaning-heading-txt'>Meaning:</p>
-						<p className="meaning-desc-txt">{this.props.definition}</p></div></div></React.Fragment>)}}
+						<p className="meaning-desc-txt">{this.props.definition}</p></div>
+					<div className='usage-section'>
+						<p className='usage-heading-txt'>Usage:</p>
+						<p className="usage-txt">{this.props.example}</p></div></div></React.Fragment>)}}
 
 export default WordPreview;

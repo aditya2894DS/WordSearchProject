@@ -19,7 +19,8 @@ class EnterNewWord extends Component{
 			subCategory:"",
 			wordConnotation:"",
 			definition:"", 
-			refreshForm: false  }
+			example: "",
+			refreshForm: false }
 
 		this.handleNewWordChange = this.handleNewWordChange.bind(this);	
 		this.handleOriginLangChange = this.handleOriginLangChange.bind(this);	
@@ -27,7 +28,9 @@ class EnterNewWord extends Component{
 		this.handleCategoryChange = this.handleCategoryChange.bind(this);	
 		this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);	
 		this.handleConnotationChange = this.handleConnotationChange.bind(this);	
-		this.handleDefinitionChange = this.handleDefinitionChange.bind(this);	}
+		this.handleDefinitionChange = this.handleDefinitionChange.bind(this);	
+		this.handleExampleChange = this.handleExampleChange.bind(this);	
+	}
 
 	handleNewWordChange(e){
 		this.setState({	newWord:e.target.value })}
@@ -50,6 +53,9 @@ class EnterNewWord extends Component{
 	handleDefinitionChange(e){
 		this.setState({	definition:e.target.value })}
 
+	handleExampleChange(e){
+		this.setState({ example:e.target.value })}
+
 	static getDerivedStateFromProps(props, state){
 		if(props.addwordState.isSuccess !== state.refreshForm){
 			return {
@@ -60,7 +66,8 @@ class EnterNewWord extends Component{
 				partOfSpeech:"",
 				subCategory:"",
 				wordConnotation:"",
-				definition:"" }}
+				definition:"",
+				example: "" }}
 		else return null;		
 	}	
 
@@ -73,6 +80,7 @@ class EnterNewWord extends Component{
 			subCategory,
 			wordConnotation,
 			definition,
+			example
 		} = this.state
 
 		let wordDetail = {
@@ -82,7 +90,10 @@ class EnterNewWord extends Component{
 			partOfSpeech,
 			subCategory,
 			wordConnotation,
-			definition }
+			definition,
+			example }
+
+		console.log('data' + JSON.stringify(wordDetail))	
 
 		return(
 			<React.Fragment>
@@ -104,7 +115,10 @@ class EnterNewWord extends Component{
 								changeConnotation={this.handleConnotationChange} 
 								showValue_Connotation={wordConnotation}
 								changeDefinition={this.handleDefinitionChange}
-								showValue_Definition={definition} />
+								showValue_Definition={definition} 
+								changeExample={this.handleExampleChange}
+								showValue_Example={example}
+								/>
 							<WordPreview 
 								newWord={newWord} 
 								originLang={originLang} 
@@ -112,7 +126,8 @@ class EnterNewWord extends Component{
 								partOfSpeech={partOfSpeech} 
 								subCategory={subCategory} 
 								wordConnotation={wordConnotation} 
-								definition={definition} /></div>	
+								definition={definition} 
+								example={example} /></div>	
 							<div className='savedword_btn-holder flex-row'>
 								<p className='message-container'>{this.props.addwordState.err}</p>
 								<p className='savedsuccess-msg'>{this.props.addwordState.savedStatus}</p>

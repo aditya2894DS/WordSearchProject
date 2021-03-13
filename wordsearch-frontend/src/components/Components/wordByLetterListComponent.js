@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 function WordInDetailComponent(props){
   let { recievedWordsProps } = props
   if(recievedWordsProps !== null){
@@ -16,13 +15,16 @@ function WordInDetailComponent(props){
             <p className='rootword-txt'><b>Root word:</b>{recievedWordsProps.root}</p></div>
           <div className='meaning-section'>
             <p className='meaning-heading-txt'><b>Meaning :-</b></p>
-            <p className="meaning-desc-txt">{recievedWordsProps.definition}</p></div></div></React.Fragment>)}
+            <p className="meaning-desc-txt">{recievedWordsProps.definition}</p></div>
+          <div className='usage-section'>
+            <p className='usage-heading-txt'><b>Usage :-</b></p>
+            <p className="usage-txt">{recievedWordsProps.example}</p></div></div></React.Fragment>)}
   else return <React.Fragment />}
 
 function WordByLetterListComponent(props){
   let { recievedWordsProps } = props
   const [ clickedWord, setClickedWord ] = useState(null)
-
+  console.log('recieved '+ JSON.stringify(recievedWordsProps))
   return(
     <React.Fragment>
       <div className='viewwordindetail-section-container flex-row'>

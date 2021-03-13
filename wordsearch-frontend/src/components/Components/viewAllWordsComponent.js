@@ -34,7 +34,7 @@ function ViewAllWordsComponent(props){
 									<div className='viewword_griditem' key={char}>
 										<div className='viewword_grid-header flex-row'>
 											<Link to={`${viewWordsByLetterURL}/${char}`}><h2>{char}</h2></Link>
-											<p>({orderWordList(char).length})	</p></div>
+											<p>({orderWordList(char).length})</p></div>
 										<hr />
 										<ul className='word_list'>
 										{ orderWordList(char).map(word => {
@@ -52,10 +52,7 @@ function ViewAllWordsComponent(props){
 				</React.Fragment>
 				)
 	} else return(
-		<SignInLoadingComponent />
-
-			)
-}
+		<SignInLoadingComponent />)}
 
 function ViewAllWords(){
 	let dispatch = useDispatch()	

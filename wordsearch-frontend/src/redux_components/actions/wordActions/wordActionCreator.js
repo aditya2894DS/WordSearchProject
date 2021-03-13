@@ -97,10 +97,11 @@ export function initiateAddWord(wordDetail){
             partOfSpeech: wordDetail.partOfSpeech,
             partOfSpeechSubCategory: wordDetail.subCategory,
             connotation: wordDetail.wordConnotation,
-            definition: wordDetail.definition })   
-        })
+            definition: wordDetail.definition,
+            example: wordDetail.example })   
+          })
         .then(res => res.json())
-        .then(json => 
+        .then(json =>
           (json.success) ?
             dispatch(successAddWord()) :
             dispatch(failAddWord(json.err_msg))

@@ -40,6 +40,7 @@ class NewWordFormComponent extends Component{
 			changeSubCategory, 
 			changeConnotation, 
 			changeDefinition,
+			changeExample,
 			clearFormProps,
 			showValue_Word,
 			showValue_OriginLang,
@@ -47,7 +48,8 @@ class NewWordFormComponent extends Component{
 			showValue_PartOfSpeech,
 			showValue_SubCategory,
 			showValue_Connotation,
-			showValue_Definition } = this.props
+			showValue_Definition,
+		  showValue_Example } = this.props
 		
 		if(clearFormProps === true){ this.clearOnSave() }
 
@@ -125,6 +127,10 @@ class NewWordFormComponent extends Component{
 						<p className='subheading-text'>Meaning: </p>
 						<textarea className='meaning-textarea' 
 							onInput={changeDefinition} 
-							value={showValue_Definition}/></div></div></React.Fragment>)}}
+							value={showValue_Definition}/>
+						<p className='subheading-text'>Example sentences: </p>
+						<textarea className='example-sentence-textarea'
+							onInput={changeExample}
+							value={showValue_Example } /></div></div></React.Fragment>)}}
 
 export default NewWordFormComponent;

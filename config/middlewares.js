@@ -29,5 +29,3 @@ module.exports = {
   authenticateJWT: authenticateJWT,
   isSavedBy: isSavedBy
 }
-
-// return res.sendStatus(403)

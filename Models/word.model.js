@@ -30,6 +30,9 @@ const wordSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 		default: ''	},
+	example: [{
+		type: String,
+		default: ''	}],
 	savedBy: [{
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Member' }]	
